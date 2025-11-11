@@ -103,6 +103,20 @@ void darklightmode(Fl_Widget*,void*)
     }
 }
 
+void reducesize(Fl_Widget*,void*)
+{
+    editor->textsize(editor->textsize()-5);
+    editor->redraw();
+    browser->textsize(browser->textsize()-5);
+}
+
+void increasesize(Fl_Widget*,void*)
+{
+    editor->textsize(editor->textsize()+5);
+    editor->redraw();
+    browser->textsize(browser->textsize()+5);
+}
+
 int main()
 {
     Fl::scheme("gtk+");
@@ -176,7 +190,10 @@ int main()
 
     Fl_Menu_Bar* menubar=new Fl_Menu_Bar(0,0,width,25);
 
-    menubar->add("View/Dark\\Light mode (ctrl+l)",FL_CTRL+'l',darklightmode,NULL);
+    
+    menubar->add("View/Dark\\Light mode",FL_CTRL+'l',darklightmode,NULL);
+    menubar->add("View/Reduce The Font Size",FL_CTRL+'r',reducesize,NULL);
+    menubar->add("View/Increase The Font Size",FL_CTRL+'i',increasesize,NULL);
 
     win->end();
     win->show();
