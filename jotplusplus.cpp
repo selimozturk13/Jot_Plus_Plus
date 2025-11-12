@@ -198,7 +198,7 @@ int main()
     input = new Fl_Input(560, editor_h+35, 100, 30, "Title:");
     input->textsize(16);
     input->callback(inputcallback);
-    input->when(FL_WHEN_ENTER_KEY);
+    input->when(FL_WHEN_CHANGED);
     Fl_Button* create= new Fl_Button(670,editor_h+35,100,30,"Create");
     create->callback([](Fl_Widget* w, void* data){
         auto pair = (std::pair<Fl_Input*, Fl_Text_Buffer*>*)data;
