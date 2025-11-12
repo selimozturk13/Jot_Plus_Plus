@@ -194,7 +194,7 @@ int main()
     save->callback(writecallback);
     Fl_Button* del= new Fl_Button(780,editor_h+35,100,30,"Delete");
     del->callback(delcallback);
-    
+     
     input = new Fl_Input(560, editor_h+35, 100, 30, "Title:");
     input->textsize(16);
     input->callback(inputcallback);
