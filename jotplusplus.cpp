@@ -150,7 +150,7 @@ void exportmd(Fl_Widget*,void*)
     Fl_Native_File_Chooser native_chooser;
     native_chooser.type(Fl_Native_File_Chooser::BROWSE_SAVE_FILE);
     native_chooser.title("Export Note as MARKDOWN");
-    native_chooser.filter("TXT files\t*.md");
+    native_chooser.filter("Markdown files\t*.md");
     native_chooser.preset_file("Notes.md");
     switch (native_chooser.show()) {
         case -1: 
