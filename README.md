@@ -36,7 +36,12 @@ sudo apt install g++ make libfltk1.3-dev libsqlite3-dev
 ### From Releases
 
 Download a release from releases page.
-Click and open *Jot++*.
+After downloading, give **Jot++** execution permission by running the command below in your terminal:
+```bash
+# Replace this with the actual path where you extracted Jot++
+chmod +x /path/to/Jot++/jotplusplus
+```
+Once the file is executable, simply double-click Jot++ to launch it.
 
 ### From Source Code (Advance users only)
 
