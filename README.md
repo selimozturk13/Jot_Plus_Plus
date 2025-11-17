@@ -6,52 +6,83 @@ Jot++ is a fast and lightweight note-taking program written in C++.
 
 ## Features
 
-- **Fast** note-taking.
-- **Lightweight**.
-- User-**friendly**.
-- **Light** and **dark** mode.
+-   **Fast** note-taking.
+-   **Lightweight** design.
+-   User-**friendly** interface.
+-   Supports **light** and **dark** mode.
+-   **Export** notes as `.txt` or `.md`.
+-   Simple and clean UI powered by **FLTK**.
 
 ## Requirements
-- Compiler: g++
-- Build Tool: make
-- Dependencies:
-    - FLTK 1.4 (libfltk and libfltk_images)
-    - SQLite3 (libsqlite3)
+
+-   Compiler: `g++`
+-   Build Tool: `make`
+-   Dependencies:
+    -   FLTK 1.4 (`libfltk` and `libfltk_images`)
+    -   SQLite3 (`libsqlite3`)
+
 ### Download requirements
-```bash
+
+``` bash
 # Install dependencies on macOS using Homebrew
 brew install fltk sqlite
 
 # On Linux (Ubuntu/Debian)
 sudo apt install g++ make libfltk1.3-dev libsqlite3-dev
-
 ```
+
 ## Installation
-Install Jot++ by running this codes in your terminal:
-```bash
+
+### From Releases
+
+Download a release from releases page.
+Click and open *Jot++*.
+
+### From Source Code (Advance users only)
+
+Install Jot++ by running the commands below in your terminal:
+
+``` bash
 git clone https://github.com/selimozturk13/Jot_Plus_Plus.git
 cd Jot_Plus_Plus
+git clone https://github.com/SqliteModernCpp/sqlite_modern_cpp
 make && sudo make install
 ```
-Then, open it by running `jotplusplus` in your terminal or clicking the file into your file manager.
+
+Then, open it by running `./jotplusplus` in your terminal or by clicking
+the installed application from your file manager.
 
 ## Usage
-Open Jot++. 
-### To **create** note
-- Write the title of note into the input for title.
-- Write the content of note into editor.
-- Press to the **create** button.
+
+Open **Jot++**.
+
+### To **create** a note
+
+-   Write the note title into the title input field.
+-   Write the content of the note into the editor.
+-   Press the **create** button.
+
 ### To **view** and **edit** a note
-- Tap to the note which you want to view and edit.
-- The note's content'll appear in the editor, you can edit it.
-- When you finish editting, press to the **save** button to save it.
-### To **delete a note
-- Tap to the note which you want to delete.
-- Press **delete** button to delete it.
+
+-   Click on the note you want to view or edit.
+-   The note's content will appear in the editor.
+-   Edit it as you like.
+-   Press the **save** button when you are done.
+
+### To **delete** a note
+
+-   Click the note you want to delete.
+-   Press the **delete** button.
+
 ### To **export notes**
-- Tap to the *file* at the menu.
-- Tap to the export.
-- Select the type. You can export notes as text(.txt) file or markdown(.md) file.
-- A your file manager'll open, select the folder that you want to export.
+
+-   Open the **File** menu.
+-   Click **Export**.
+-   Choose the file type (`.txt` or `.md`).
+-   Your file manager will open; choose the folder to export your note.
+
 ### To change **view** settings
-Tap to the *View* at the menu. The settings are at the menu.
+
+-   Open the **View** menu.
+-   Choose between light/dark modes or adjust other view-related
+    settings.
